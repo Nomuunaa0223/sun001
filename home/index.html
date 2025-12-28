@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun Hotel & Resort</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="Screenshot_2025-12-20_192848-removebg-preview.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bungee+Shade&family=Jacques+Francois+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+NO:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Six+Caps&family=Tangerine:wght@400;700&family=WindSong:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Body эхлэлд эдгээр байх ёстой -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="slide-menu" id="slideMenu">
+      <button class="close-menu" id="closeMenu">×</button>
+      <a href="#">Back to Home</a>
+      <p class="ner">Sun Hotel & Resorts</p>
+      <div>
+        <a href="#" onclick="closeMenuAndStay(event)">Homepage</a>
+        <a href="../uruu/menu.html">Accommodations</a>
+        <a href="#">Experiences</a>
+        <a href="#footer-section" onclick="scrollToFooter(event)">Contact</a>
+      </div>
+    </div>
+    <section class="home">
+      <div class="ulddeghome">
+        <div class="logo">
+          <img src="../img/logo.png" alt="" />
+        </div>
+        <div class="nav">
+          <a href="#">SIGN IN</a>
+          <a href="../booking page/index.html">BOOK NOW</a>
+          <a href="#" id="menuToggle">MENU</a>
+        </div>
+      </div>
+
+      <div class="overlay-text">
+        <span
+          >Constance Belle Mare Plage, on Mauritius' east coast, offers 2km
+          of</span
+        >
+        <span
+          >white sand beaches, 5-star service, and lush tropical
+          surroundings,</span
+        >
+        <span>promising an unforgettable luxury retreat.</span>
+      </div>
+      <div class="hero2">
+        <video autoplay muted loop playsinline class="bg-video">
+          <source
+            src="https://cdn.bfldr.com/4HTSVWZZ/at/nx2b65xh44tskwvbg6vptrv/Constance-Belle_Mare_Plage-Video_Teaser.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h1>Pictures & Videos</h1>
+
+      <div class="gallery-container">
+        <div class="flowing-row top">
+          <img
+            src="https://bfldr.constancehotels.com/4HTSVWZZ/at/pv8r2swbq75h6qnzf9kf8rm/Constance-Belle_Mare_Plage-Restaurants_and_Bars-The_Blu_Bar-01.jpg?format=webp&width=1800"
+            alt="1"
+          />
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/20/ed/11/belle-mare-plage.jpg?w=1200&h=800&s=1"
+            alt="2"
+          />
+          <img
+            src="https://theblondeabroad.com/wp-content/uploads/2018/04/Constance-Belle-Mare-2.jpg"
+            alt="3"
+          />
+          <img
+            src="https://cdn.audleytravel.com/1050/749/79/16024100-swimming-pool-constance-belle-mare-plage.webp"
+            alt="5"
+          />
+          <img
+            src="https://www.golf-escapes.com/wp-content/uploads/2024/06/Constance-Belle-Mare-Plage-7-1024x683.jpg"
+            alt="6"
+          />
+          <img
+            src="https://yellowzebrasafaris.com/media/19098/belle-mare-plage-2016-villa-08.jpg?width=1200"
+            alt="7"
+          />
+
+          <img
+            src="https://bfldr.constancehotels.com/4HTSVWZZ/at/pv8r2swbq75h6qnzf9kf8rm/Constance-Belle_Mare_Plage-Restaurants_and_Bars-The_Blu_Bar-01.jpg?format=webp&width=1800"
+            alt="1"
+          />
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/20/ed/11/belle-mare-plage.jpg?w=1200&h=800&s=1"
+            alt="2"
+          />
+          <img
+            src="https://theblondeabroad.com/wp-content/uploads/2018/04/Constance-Belle-Mare-2.jpg"
+            alt="3"
+          />
+          <img
+            src="https://www.constancehotels.com/medias/4HTSVWZZ/at/hjkcmtvkw8cvb37k9cj5qxjt/Constance-Belle_Mare_Plage-Accommodation-Presidential_Villa-11.jpg?width=1200"
+            alt="4"
+          />
+          <img
+            src="https://cdn.audleytravel.com/1050/749/79/16024100-swimming-pool-constance-belle-mare-plage.webp"
+            alt="5"
+          />
+          <img
+            src="https://www.golf-escapes.com/wp-content/uploads/2024/06/Constance-Belle-Mare-Plage-7-1024x683.jpg"
+            alt="6"
+          />
+          <img
+            src="https://yellowzebrasafaris.com/media/19098/belle-mare-plage-2016-villa-08.jpg?width=1200"
+            alt="7"
+          />
+        </div>
+        <div class="flowing-row bottom">
+          <img
+            src="https://images.luxuryescapes.com/fl_progressive,q_auto:good/7e4xlw5qi4notmqp9gti"
+            alt="8"
+          />
+          <img
+            src="https://www.carrier.co.uk/media/z1bhdrxf/bmpbs-pool_bar1.jpg?width=1200"
+            alt="9"
+          />
+          <img
+            src="https://bfldr.constancehotels.com/4HTSVWZZ/at/3c76hx4c8gppx5bs494f27jw/Constance-Belle_Mare_Plage-Restaurants_and_Bars-The_Bar-01.jpg?width=1200"
+            alt="10"
+          />
+          <img
+            src="https://www.angelfish.travel/images/highres/45_640_la-citronnelle-restaurant-13_hd_(5).webp"
+            alt="11"
+          />
+          <img
+            src="https://cms.tgigolftravel.com/pictures/gallery/constance_belle_mare_plage_13416.jpg"
+            alt="12"
+          />
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/c1/36/be/constance-belle-mare.jpg?w=1200&h=800&s=1"
+            alt="13"
+          />
+
+          <img
+            src="https://images.luxuryescapes.com/fl_progressive,q_auto:good/7e4xlw5qi4notmqp9gti"
+            alt="8"
+          />
+          <img
+            src="https://www.carrier.co.uk/media/z1bhdrxf/bmpbs-pool_bar1.jpg?width=1200"
+            alt="9"
+          />
+          <img
+            src="https://bfldr.constancehotels.com/4HTSVWZZ/at/3c76hx4c8gppx5bs494f27jw/Constance-Belle_Mare_Plage-Restaurants_and_Bars-The_Bar-01.jpg?width=1200"
+            alt="10"
+          />
+          <img
+            src="https://www.angelfish.travel/images/highres/45_640_la-citronnelle-restaurant-13_hd_(5).webp"
+            alt="11"
+          />
+          <img
+            src="https://cms.tgigolftravel.com/pictures/gallery/constance_belle_mare_plage_13416.jpg"
+            alt="12"
+          />
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/c1/36/be/constance-belle-mare.jpg?w=1200&h=800&s=1"
+            alt="13"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="luxury-section">
+      <h1 class="title">
+        Discover Unmatched Luxury at Constance<br />Belle Mare Plage
+      </h1>
+      <div class="feature">
+        <span class="feature-number">01</span>
+        <div class="feature-content">
+          <h2 class="feature-title">Pristine White Sand Beaches</h2>
+          <p class="feature-desc">
+            Enjoy 2km of stunning, unspoiled white sand beaches on the serene
+            east coast of Mauritius, perfect for relaxation and adventure.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="feature-number">02</span>
+        <div class="feature-content">
+          <h2 class="feature-title">Exceptional 5-Star Service</h2>
+          <p class="feature-desc">
+            Experience world-class, attentive service tailored to meet every
+            need, ensuring an unforgettable stay.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="feature-number">03</span>
+        <div class="feature-content">
+          <h2 class="feature-title">Gourmet Dining Experiences</h2>
+          <p class="feature-desc">
+            Indulge in exquisite gourmet dining, featuring international cuisine
+            and local delicacies crafted by renowned chefs.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="feature-number">04</span>
+        <div class="feature-content">
+          <h2 class="feature-title">World-Class Spa and Wellness</h2>
+          <p class="feature-desc">
+            Rejuvenate at the spa with holistic treatments and wellness programs
+            designed to relax and revitalize.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="feature-number">05</span>
+        <div class="feature-content">
+          <h2 class="feature-title">Championship Golf Courses</h2>
+          <p class="feature-desc">
+            Play on two 18-hole championship golf courses, offering challenging
+            play and breathtaking views.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section" id="footer-section">
+      <div class="contact">Contact us</div>
+      <div class="n">
+        <div class="utas">
+          <p class="n1">Number</p>
+          <p class="n1.1">+ 976 9911 0575</p>
+        </div>
+        <div class="email">
+          <p class="n2">Email</p>
+          <p class="n2.2">UnuruuSaraaNomuna@gmail.com</p>
+        </div>
+        <div class="address">
+          <p class="n3">Address</p>
+          <p class="n3.3">
+            The hotel is located approximately 60 km from Mauritius' only
+            international airport, Sir Seewoosagur Ramgoolam International
+            Airport (MRU).
+          </p>
+        </div>
+      </div>
+      <div class="stay-updated">
+        <h3>Stay up to date</h3>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-solid fa-inbox"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+      <div class="map">
+        <img src="../img/Screenshot 2025-12-28 030708.png " alt="" />
+      </div>
+
+      <div class="map2">
+        <img
+          src="https://bfldr.constancehotels.com/4HTSVWZZ/at/984qcccp4w8tr9kn9vhp4fj/Constance-Belle_Mare_Plage-Beach-2017-wedo-Aerial-06_HD.jpg?format=webp&width=508&height=339&fit=crop"
+          alt=""
+        />
+      </div>
+      <div class="map3">
+        <img
+          src="https://bfldr.constancehotels.com/4HTSVWZZ/at/hwb8jkknnmt435gm3kxk9sqj/Constance-Belle_Mare_Plage-Golf-JHogg-Golf-Legend-course-8-DJI_0986-HDR.jpg?format=webp&width=508&height=339&fit=crop"
+          alt=""
+        />
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
