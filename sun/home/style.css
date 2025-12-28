@@ -1,0 +1,576 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fbf2e9;
+  overflow-x: hidden;
+}
+.hero2 video {
+  position: relative;
+  /* width: 1885px; */
+  height: auto;
+  background-position: center;
+}
+.ulddeghome {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 9999;
+}
+.nav {
+  position: fixed;
+  right: 100px;
+  font-size: 18px;
+  color: white;
+  z-index: 9999;
+  font-family: "Josefin Slab", serif;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 30px;
+  z-index: 9999;
+}
+.overlay-text {
+  position: absolute;
+  font-family: "Josefin Slab", serif;
+  bottom: 80px;
+  left: 100px;
+  max-width: 700px;
+  font-size: 22px;
+  line-height: 1.4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  color: white;
+}
+.overlay-text span {
+  display: block;
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeUp 0.8s ease forwards;
+}
+/* delay өгч дарааллаар гаргах */
+.overlay-text span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.overlay-text span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.overlay-text span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+/* animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo img {
+  position: fixed;
+  top: 8px;
+  left: 120px;
+  width: 200px;
+  height: auto;
+  z-index: 9999;
+}
+
+.gallery-section {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.gallery-section h1 {
+  font-size: 56px;
+  color: rgb(0, 42, 52);
+  margin-bottom: 20px;
+  font-family: "Josefin Slab", serif;
+}
+
+/* .gallery-section p a {
+  font-size: 28px;
+  color: #888;
+  text-decoration: none;
+} */
+
+/* Урсдаг gallery container */
+.gallery-container {
+  position: relative;
+  top: -30px;
+  width: 100%;
+  height: 650px;
+  background: linear-gradient(to bottom, #fbf2e9, #f0e6e0);
+}
+
+/* Нэг эгнээ урсгал */
+.flowing-row {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  animation: flow linear infinite;
+  white-space: nowrap; /* чухал */
+}
+
+/* Дээд эгнээ */
+.flowing-row.top {
+  top: 15%;
+  animation: flow 80s linear infinite;
+}
+
+/* Доод эгнээ (эсрэг чиглэлд) */
+.flowing-row.bottom {
+  top: 60%;
+  animation: flow 80s linear infinite reverse;
+}
+
+.flowing-row img {
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  transition: transform 0.4s ease;
+}
+
+/* Hover эффект - зураг томрох + урсгал зогсоно */
+.gallery-container:hover .flowing-row {
+  animation-play-state: paused; /* hover дээр урсгал зогсоно */
+}
+
+.flowing-row img:hover {
+  transform: scale(1.08);
+  z-index: 10;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.luxury-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+.title {
+  font-size: 56px;
+  margin-bottom: 80px;
+  font-family: "Josefin Slab", serif;
+  color: rgb(0, 42, 52);
+}
+.feature {
+  display: flex;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  color: rgb(0, 42, 52);
+}
+.feature-number {
+  font-size: 100px;
+  font-weight: 500;
+  margin-left: -250px;
+  min-width: 50px;
+  font-family: "Josefin Slab", serif;
+}
+.feature-content {
+  flex: 1;
+}
+.feature-title {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-left: 110px;
+  font-weight: 100;
+  color: rgba(0, 42, 52, 0.9);
+  font-family: "Josefin Slab", serif;
+}
+.feature-desc {
+  font-size: 18px;
+  color: rgba(0, 42, 52, 0.9);
+  width: 400px;
+  margin-left: 800px;
+  margin-top: -50px;
+  font-family: "Josefin Slab", serif;
+}
+.footer-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.contact {
+  font-family: "WindSong", cursive;
+  font-size: 84px;
+  font-weight: 600;
+  font-style: normal;
+  color: #04645f;
+  margin-bottom: 40px;
+}
+.columns {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  font-family: "Bodoni Moda", serif;
+  margin: 0 auto;
+  text-align: left;
+  gap: 250px;
+}
+.column {
+  position: relative;
+  flex: 1;
+  padding: 0 20px;
+  left: -200px;
+}
+.column h3 {
+  font-size: 32px;
+  color: #888;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.column ul li {
+  font-family: "Bodoni Moda", serif;
+  margin-bottom: 5px;
+  font-size: 23px;
+}
+.hotels-left {
+  max-width: 200px;
+}
+.hotels-right {
+  max-width: 200px;
+}
+.links {
+  max-width: 150px;
+}
+.stay-updated {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 200px;
+  margin-left: 1450px;
+  bottom: 100px;
+}
+.stay-updated h3 {
+  font-size: 14px;
+  color: rgba(0, 42, 52, 0.9);
+  margin-bottom: 10px;
+  margin-left: 60px;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 600px;
+}
+.social-icons i {
+  width: 30px;
+}
+.newsletter {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  background: white;
+  color: #888;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.n {
+  display: flex;
+  width: 1300px;
+  gap: 25px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: rgba(0, 42, 52, 0.9);
+}
+.n > div {
+  flex: 1;
+  min-width: 200px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s forwards;
+  animation-delay: 0.2s;
+}
+.n > div:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.n > div:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.n > div:nth-child(3) {
+  animation-delay: 0.12s;
+}
+.n > div p:first-child {
+  position: relative;
+  text-align: center;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.n > div p:first-child::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #ddd;
+  opacity: 0;
+  animation: lineFade 0.8s forwards;
+}
+.n > div:nth-child(1) p:first-child::after {
+  animation-delay: 0.4s;
+}
+.n > div:nth-child(2) p:first-child::after {
+  animation-delay: 0.8s;
+}
+.n > div:nth-child(3) p:first-child::after {
+  animation-delay: 0.12s;
+}
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes lineFade {
+  to {
+    opacity: 1;
+  }
+}
+
+.map img {
+  height: 750px;
+  position: relative;
+  left: -270px;
+  border: 1px solid rgba(156, 155, 155, 0.767);
+}
+.map2 img {
+  height: 350px;
+  position: relative;
+  left: 310px;
+  top: -357px;
+  border: 1px solid rgba(219, 219, 219, 0.767);
+}
+.map3 img {
+  height: 350px;
+  position: relative;
+  left: 310px;
+  top: -1106px;
+  border: 1px solid rgba(219, 219, 219, 0.767);
+}
+
+@media screen and (max-width: 900px) {
+  .hero2 video {
+    width: 100%;
+    height: 100%;
+  }
+  .ulddeghome {
+    height: 50px;
+  }
+  .nav {
+    left: 500px;
+    font-size: 14px;
+  }
+  .nav a {
+    margin: 0 20px;
+  }
+  .overlay-text {
+    font-size: 16px;
+    top: 400px;
+    left: 50px;
+  }
+  .logo img {
+    width: 130px;
+    left: 80px;
+  }
+  .gallery-section {
+    padding: 30px 0px;
+  }
+  .gallery-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .gallery-container {
+    height: 480px;
+  }
+  .flowing-row img {
+    width: 400px;
+    height: 250px;
+  }
+  .luxury-section {
+    padding: 30px 0px;
+  }
+  .luxury-section .title {
+    font-size: 40px;
+  }
+  .feature {
+    max-width: 300px;
+  }
+  .feature-number {
+    font-size: 70px;
+  }
+  .feature-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+  }
+  .feature-desc {
+    width: 350px;
+    font-size: 14px;
+    margin-left: 400px;
+  }
+  .contact {
+    font-size: 60px;
+  }
+  .n {
+    width: 600px;
+    left: 10px;
+    font-size: 11px;
+    gap: 20px;
+  }
+  .n > div {
+    min-width: 0px;
+  }
+  .stay-updated {
+    margin-left: 650px;
+  }
+  .stay-updated h3 {
+    font-size: 11px;
+  }
+  .social-icons {
+    gap: 5px;
+  }
+  .map img {
+    height: 500px;
+    left: -180px;
+  }
+  .map2 img {
+    height: 230px;
+    left: 220px;
+    top: -240px;
+  }
+  .map3 img {
+    height: 230px;
+    left: 220px;
+    top: -740px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero2 video {
+    width: 100%;
+    height: 100%;
+  }
+  .ulddeghome {
+    height: 30px;
+    position: fixed;
+  }
+  .nav {
+    left: 270px;
+    font-size: 8px;
+  }
+  .nav a {
+    margin: 0 10px;
+  }
+  .overlay-text {
+    font-size: 10px;
+    top: 200px;
+    left: 30px;
+    line-height: 1.1;
+  }
+  .logo img {
+    width: 80px;
+    left: 50px;
+    top: 3px;
+  }
+  .gallery-section {
+    padding: 10px 0px;
+  }
+  .gallery-section h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .gallery-container {
+    height: 300px;
+  }
+  .flowing-row img {
+    width: 250px;
+    height: 150px;
+  }
+  .luxury-section {
+    padding: 10px 0px;
+  }
+  .luxury-section .title {
+    font-size: 24px;
+  }
+  .feature {
+    max-width: 0px;
+  }
+  .feature-number {
+    font-size: 40px;
+    margin-left: -200px;
+  }
+  .feature-title {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .feature-desc {
+    width: 150px;
+    font-size: 10px;
+    margin-left: 200px;
+    margin-top: -40px;
+  }
+  .contact {
+    font-size: 40px;
+  }
+  .n {
+    width: 600px;
+    left: -10px;
+    font-size: 8px;
+    gap: 15px;
+  }
+  .n > div {
+    min-width: 0px;
+  }
+  .stay-updated {
+    margin-left: 650px;
+  }
+  .stay-updated h3 {
+    font-size: 11px;
+  }
+  .social-icons {
+    gap: 5px;
+  }
+  .map img {
+    height: 500px;
+    left: -180px;
+  }
+  .map2 img {
+    height: 230px;
+    left: 220px;
+    top: -240px;
+  }
+  .map3 img {
+    height: 230px;
+    left: 220px;
+    top: -740px;
+  }
+}
