@@ -1,0 +1,341 @@
+/* base */
+body {
+  font-family: "Cabin", sans-serif;
+  background: #000;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+}
+
+/* booking background */
+#booking {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("https://bfldr.constancehotels.com/4HTSVWZZ/at/98xvgb6vgtc3h25ktpxtqrt/Constance-Belle_Mare_Plage-Accommodation-Junior_Suite-06.jpg?format=webp&width=3840&height=2160&fit=crop");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#booking::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65));
+}
+
+/* center */
+.section-center {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* booking card */
+.booking-form {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+/* left image */
+.booking-form > .booking-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px 0 0 16px;
+}
+
+/* form body */
+.booking-form > form {
+  margin-left: 250px;
+  padding: 40px;
+}
+
+/* header */
+.booking-form .form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.booking-form .form-header h2 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* form elements */
+.booking-form .form-group {
+  margin-bottom: 20px;
+}
+
+.booking-form .form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #eaeaea;
+}
+
+.booking-form .form-control {
+  height: 52px;
+  width: 100%;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  color: #122244;
+}
+
+.booking-form .form-control::placeholder {
+  color: #dde3e8;
+}
+
+.booking-form .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
+}
+
+/* select arrow */
+.booking-form select.form-control {
+  appearance: none;
+}
+
+.booking-form select.form-control + .select-arrow {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.booking-form select.form-control + .select-arrow::after {
+  content: "\279C";
+  display: block;
+  transform: rotate(90deg);
+  color: #dddee9;
+  font-size: 14px;
+}
+
+/* button */
+.booking-form .form-btn {
+  margin-top: 25px;
+}
+
+.booking-form .submit-btn {
+  width: 100%;
+  height: 56px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #0d6efd, #003f88);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.booking-form .submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* main wrapper */
+.booking-confirmation.success {
+  display: flex;
+  justify-content: center;
+}
+
+/* card */
+.confirm-card {
+  display: flex;
+  width: 680px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+  border: 2px solid #28a745;
+}
+
+/* left image */
+.confirm-image {
+  width: 40%;
+  background-image: url("https://images.unsplash.com/photo-1501117716987-c8e1ecb2108b");
+  background-size: cover;
+  background-position: center;
+}
+
+/* right content */
+.confirm-content {
+  width: 60%;
+  padding: 28px 32px;
+}
+
+/* header */
+.confirm-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.confirm-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #122244;
+}
+
+/* check icon */
+.check-icon {
+  width: 24px;
+  height: 24px;
+  background: #28a745;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/* rows */
+.confirm-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+.confirm-row span {
+  color: #666;
+}
+
+/* status */
+.status.confirmed {
+  color: #28a745;
+  font-weight: 700;
+}
+
+/* price */
+.price {
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .confirm-card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .confirm-image {
+    width: 100%;
+    height: 180px;
+  }
+
+  .confirm-content {
+    width: 100%;
+  }
+}
+
+/* confirmation card */
+.booking-confirmation {
+  max-width: 420px;
+  margin: auto;
+  padding: 32px 28px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+/* success variant */
+.booking-confirmation.success {
+  border: 2px solid #28a745;
+}
+
+/* title */
+.confirm-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #122244;
+}
+
+/* summary box */
+.confirm-summary {
+  margin-bottom: 28px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-row span {
+  color: #666;
+}
+
+/* price */
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+/* status */
+.status {
+  font-weight: 700;
+}
+
+.status.pending {
+  color: #f0ad4e;
+}
+
+.status.confirmed {
+  color: #28a745;
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  .booking-form > .booking-bg {
+    display: none;
+  }
+
+  .booking-form > form {
+    margin-left: 0;
+  }
+}
