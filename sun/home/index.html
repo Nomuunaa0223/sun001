@@ -27,14 +27,29 @@
     />
   </head>
   <body>
+    <!-- Body эхлэлд эдгээр байх ёстой -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="slide-menu" id="slideMenu">
+      <button class="close-menu" id="closeMenu">×</button>
+      <a href="#">Back to Home</a>
+      <p class="ner">Sun Hotel & Resorts</p>
+      <div>
+        <a href="#" onclick="closeMenuAndStay(event)">Homepage</a>
+        <a href="../uruu/menu.html">Accommodations</a>
+        <a href="#">Experiences</a>
+        <a href="#footer-section" onclick="scrollToFooter(event)">Contact</a>
+      </div>
+    </div>
     <section class="home">
       <div class="ulddeghome">
         <div class="logo">
-          <img src="./logo.png" alt="" />
+          <img src="../img/logo.png" alt="" />
         </div>
         <div class="nav">
-          <a href="#">SIGN IN</a> <a href="../booking page/index.html">BOOK NOW</a>
-          <a href="../uruu/menu.html">MENU</a>
+          <a href="#">SIGN IN</a>
+          <a href="../booking page/index.html">BOOK NOW</a>
+          <a href="#" id="menuToggle">MENU</a>
         </div>
       </div>
 
@@ -61,7 +76,6 @@
 
     <section class="gallery-section">
       <h1>Pictures & Videos</h1>
-      <!-- <p><a href="#">View Gallery</a></p> -->
 
       <div class="gallery-container">
         <div class="flowing-row top">
@@ -228,7 +242,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer-section">
+    <footer class="footer-section" id="footer-section">
       <div class="contact">Contact us</div>
       <div class="n">
         <div class="utas">
@@ -242,7 +256,7 @@
         <div class="address">
           <p class="n3">Address</p>
           <p class="n3.3">
-            The hotel is located approximately 60 km from Mauritius’ only
+            The hotel is located approximately 60 km from Mauritius' only
             international airport, Sir Seewoosagur Ramgoolam International
             Airport (MRU).
           </p>
@@ -258,10 +272,9 @@
           <i class="fa-brands fa-x-twitter"></i>
           <i class="fa-brands fa-pinterest"></i>
         </div>
-        <!-- <button class="newsletter">Subscribe to newsletter</button> -->
       </div>
       <div class="map">
-        <img src="./Screenshot 2025-12-28 030708.png" alt="" />
+        <img src="../img/Screenshot 2025-12-28 030708.png " alt="" />
       </div>
 
       <div class="map2">
