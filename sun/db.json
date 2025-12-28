@@ -1,4 +1,96 @@
 {
-  "users": [],
-  "bookings": []
+  "users": [
+    {
+      "id": "f10a",
+      "name": "enzi",
+      "email": "enkhzinbataa@gmail.com",
+      "password": "enzi123"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "4ee3",
+      "userId": "f10a",
+      "houseType": "Prestige Room",
+      "checkIn": "2025-12-11",
+      "checkOut": "2025-12-29",
+      "totalPrice": 240000,
+      "status": "confirmed",
+      "createdAt": "2025-12-28T18:56:31.917Z"
+    },
+    {
+      "id": "fa69",
+      "userId": "f10a",
+      "houseType": "Deluxe Suite sea facing",
+      "checkIn": "2025-12-10",
+      "checkOut": "2025-12-10",
+      "totalPrice": 240000,
+      "status": "confirmed",
+      "createdAt": "2025-12-28T18:57:25.838Z"
+    },
+    {
+      "id": "3000",
+      "userId": "f10a",
+      "houseType": "Junior Suite",
+      "checkIn": "2025-12-22",
+      "checkOut": "2025-12-29",
+      "totalPrice": 240000,
+      "status": "confirmed",
+      "createdAt": "2025-12-28T19:00:45.674Z"
+    },
+    {
+      "id": "6413",
+      "userId": "f10a",
+      "houseType": "Junior Suite beachfront",
+      "checkIn": "2025-12-15",
+      "checkOut": "2025-12-30",
+      "totalPrice": 240000,
+      "status": "confirmed",
+      "createdAt": "2025-12-28T19:03:38.370Z"
+    },
+    {
+      "id": "079c",
+      "userId": "f10a",
+      "houseType": "Deluxe Suite sea facing",
+      "checkIn": "2025-12-19",
+      "checkOut": "2025-12-17",
+      "totalPrice": 240000,
+      "status": "confirmed",
+      "createdAt": "2025-12-28T19:05:14.051Z"
+    },
+    {
+      "id": "a4ab",
+      "userId": "f10a",
+      "houseType": "Pool Villa 3 Bedrooms Garden View",
+      "checkIn": "2025-12-31",
+      "checkOut": "2025-12-17",
+      "totalPrice": 240000,
+      "status": "confirmed",
+      "createdAt": "2025-12-28T19:05:28.720Z"
+    },
+    {
+      "id": "c9c0",
+      "userId": "f10a",
+      "houseType": "Deluxe Suite sea facing",
+      "checkIn": "2025-12-16",
+      "checkOut": "2025-12-11",
+      "totalPrice": 240000,
+      "status": "confirmed",
+      "createdAt": "2025-12-28T19:09:16.598Z"
+    },
+    {
+      "id": "3f05",
+      "bookingNumber": "BK-1766949300701",
+      "userId": "f10a",
+      "houseType": "Prestige Room",
+      "checkIn": "2025-12-10",
+      "checkOut": "2025-12-17",
+      "phone": "9922 0508",
+      "adults": 4,
+      "children": 3,
+      "totalPrice": 240000,
+      "status": "confirmed",
+      "createdAt": "2025-12-28T19:15:00.701Z"
+    }
+  ]
 }

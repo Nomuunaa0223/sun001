@@ -32,13 +32,23 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <span class="form-label">Check In</span>
-                      <input class="form-control" type="date" required />
+                      <input
+                        id="checkIn"
+                        class="form-control"
+                        type="date"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <span class="form-label">Check Out</span>
-                      <input class="form-control" type="date" required />
+                      <input
+                        id="checkOut"
+                        class="form-control"
+                        type="date"
+                        required
+                      />
                     </div>
                   </div>
                 </div>
@@ -63,7 +73,7 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <span class="form-label">Adults</span>
-                      <select class="form-control">
+                      <select class="form-control" id="adults">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -80,7 +90,7 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <span class="form-label">Children</span>
-                      <select class="form-control">
+                      <select class="form-control" id="children" >
                         <option>0</option>
                         <option>1</option>
                         <option>2</option>
@@ -110,6 +120,7 @@
                     class="form-control"
                     type="tel"
                     placeholder="Enter your phone number"
+                    id="phone"  
                   />
                 </div>
                 <div class="form-btn">
@@ -137,7 +148,9 @@
                   </div>
                 </div>
 
-                <button id="payBtn" class="submit-btn">Төлбөр төлөх</button>
+                <button id="payBtn" type="button" class="submit-btn">
+                  Төлбөр төлөх
+                </button>
               </div>
 
               <!-- SUCCESS -->
