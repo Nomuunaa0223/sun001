@@ -359,22 +359,25 @@ body {
   height: 750px;
   position: relative;
   left: -270px;
-  border: 1px solid rgba(156, 155, 155, 0.767);
   border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 .map2 img {
   height: 350px;
   position: relative;
   left: 310px;
   top: -357px;
-  border: 1px solid rgba(219, 219, 219, 0.767);
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
+
 .map3 img {
   height: 350px;
   position: relative;
   left: 310px;
   top: -1106px;
-  border: 1px solid rgba(219, 219, 219, 0.767);
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
 /* ============================================ */
